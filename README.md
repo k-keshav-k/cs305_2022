@@ -33,12 +33,16 @@ insert into actor values(204, 'name4', 'namelast4', '2006-02-15 04:35:33');<br /
 insert into actor values(205, 'name5', 'namelast5', '2006-02-15 04:35:33');<br />*
 Go the folder of this program and run<br />
 gradle test<br />
-Or it can also be run by opening the library in IntelliJ and then running the FinalImplementation2Test.java file.<br />
-For primitives or array of primitives or collection of primitives:<br />
-${value} is used to denote a single element, each ${value} can only be replaced by a single value, not an array.<br />
-For objects of classes:<br />
-${propx} is used to denoted obj.propx, that is, property propx of object obj.<br />
-Here also, only one element can replace ${propx}, not an array of values.<br />
+Or it can also be run by opening the library in IntelliJ and then running the FinalImplementation2Test.java file.
+#### For primitives or array of primitives or collection of primitives:
+${value} is used to denote a single element, each ${value} can only be replaced by a single value, not an array.
+#### For objects of custom defined classes:
+${propx} is used to denoted obj.propx, that is, property propx of object obj.
+Here also, only one element can replace ${propx}, not an array of values.
+Examples:
+Select * fromm actor where actor_id in (${value}, ${value}, ${value});
+
+#### Code coverage is 98% of all the lines, picture is attatched in design document. It can be checked in index.html file and also by executing FinalImplementation2Test with coverage and then observing the obtained coverage.
 
 ## 4. Provide a snapshot of a sample run:<br />
 
