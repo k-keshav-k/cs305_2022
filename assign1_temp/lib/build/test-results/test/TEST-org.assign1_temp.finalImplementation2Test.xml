@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.assign1_temp.finalImplementation2Test" tests="12" skipped="0" failures="0" errors="0" timestamp="2022-02-11T15:35:07" hostname="LAPTOP-VCVL17IN" time="3.99">
+<testsuite name="org.assign1_temp.finalImplementation2Test" tests="12" skipped="0" failures="0" errors="0" timestamp="2022-02-11T17:27:29" hostname="LAPTOP-VCVL17IN" time="3.532">
   <properties/>
-  <testcase name="selectOne1()" classname="org.assign1_temp.finalImplementation2Test" time="1.6"/>
-  <testcase name="selectOne2()" classname="org.assign1_temp.finalImplementation2Test" time="0.073"/>
-  <testcase name="selectOne3()" classname="org.assign1_temp.finalImplementation2Test" time="1.429"/>
-  <testcase name="update1()" classname="org.assign1_temp.finalImplementation2Test" time="0.156"/>
-  <testcase name="update2()" classname="org.assign1_temp.finalImplementation2Test" time="0.078"/>
-  <testcase name="selectMany1()" classname="org.assign1_temp.finalImplementation2Test" time="0.093"/>
-  <testcase name="selectMany2()" classname="org.assign1_temp.finalImplementation2Test" time="0.084"/>
-  <testcase name="delete1()" classname="org.assign1_temp.finalImplementation2Test" time="0.07"/>
-  <testcase name="delete2()" classname="org.assign1_temp.finalImplementation2Test" time="0.075"/>
-  <testcase name="delete3()" classname="org.assign1_temp.finalImplementation2Test" time="0.071"/>
-  <testcase name="insert1()" classname="org.assign1_temp.finalImplementation2Test" time="0.073"/>
-  <testcase name="insert2()" classname="org.assign1_temp.finalImplementation2Test" time="0.071"/>
+  <testcase name="selectOne1()" classname="org.assign1_temp.finalImplementation2Test" time="1.189"/>
+  <testcase name="selectOne2()" classname="org.assign1_temp.finalImplementation2Test" time="0.061"/>
+  <testcase name="selectOne3()" classname="org.assign1_temp.finalImplementation2Test" time="1.256"/>
+  <testcase name="update1()" classname="org.assign1_temp.finalImplementation2Test" time="0.152"/>
+  <testcase name="update2()" classname="org.assign1_temp.finalImplementation2Test" time="0.083"/>
+  <testcase name="selectMany1()" classname="org.assign1_temp.finalImplementation2Test" time="0.101"/>
+  <testcase name="selectMany2()" classname="org.assign1_temp.finalImplementation2Test" time="0.1"/>
+  <testcase name="delete1()" classname="org.assign1_temp.finalImplementation2Test" time="0.16"/>
+  <testcase name="delete2()" classname="org.assign1_temp.finalImplementation2Test" time="0.072"/>
+  <testcase name="delete3()" classname="org.assign1_temp.finalImplementation2Test" time="0.08"/>
+  <testcase name="insert1()" classname="org.assign1_temp.finalImplementation2Test" time="0.086"/>
+  <testcase name="insert2()" classname="org.assign1_temp.finalImplementation2Test" time="0.086"/>
   <system-out><![CDATA[Queries are: 
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
