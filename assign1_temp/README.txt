@@ -15,6 +15,12 @@ Connection to database is established.
 paramType and passed paramters are comparred.
 All parameters in query are filled with respective values.
 The query is run and the result obtained is used to populate POJOs in case of SELECT queries.
+In detail, when a new object is created of finalImplementation2, the constructor is called, which parses the xml document and stores the queries and queryParam in a List. The user of the library opens a connection to a database and sets con variable of class FinalImplementation2 to the connection object.
+Then the user can start running the functions: selectOne, selectMany, insert, delete and update. 
+The fuctions first iterate through the list of queries to get the query corresponding to the queryId passed.
+Then it checks if passed parameters and xml ParamType are of the same type or not. If they are not, a exception is thrown. 
+If the type of passed parameters and xml ParamType are same, then the function checks condition and correspondingly calls either substituteValue Array or substituteValueObject to substitute the value dynamically in the query.
+Finally the query is run and the result is mapped to POJO in case of select query using a function mapRersultSetToObject, which maps the resultSet to similar named properties of the POJO, so actor_id column in resultSet is mapped to actor_id variable of the POJO and likewise.
 
 3. How to compile and run this program
 run following mysql queries on actor table of sakila database to get rows to test on:
@@ -33,6 +39,10 @@ ${value} is used to denote a single element, each ${value} can only be replaced 
 For objects of classes:
 ${propx} is used to denoted obj.propx, that is, property propx of object obj.
 Here also, only one element can replace ${propx}, not an array of values.
+Examples:
+Select * fromm actor where actor_id in (${value}, ${value}, ${value});
+
+Code coverage is 98% of all the lines, picture is attatched in design document.
 
 4. Provide a snapshot of a sample run:
 
