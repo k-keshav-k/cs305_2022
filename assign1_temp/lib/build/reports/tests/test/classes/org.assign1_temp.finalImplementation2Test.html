@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - finalImplementation2Test</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>finalImplementation2Test</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.assign1_temp.html">org.assign1_temp</a> &gt; finalImplementation2Test</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.873s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">delete1()</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete2()</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delete3()</td>
+<td class="success">0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">insert1()</td>
+<td class="success">0.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">insert2()</td>
+<td class="success">0.071s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">selectMany1()</td>
+<td class="success">0.093s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">selectMany2()</td>
+<td class="success">0.084s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">selectOne1()</td>
+<td class="success">1.600s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">selectOne2()</td>
+<td class="success">0.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">selectOne3()</td>
+<td class="success">1.429s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update1()</td>
+<td class="success">0.156s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update2()</td>
+<td class="success">0.078s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+1
+PENELOPE
+Query after replacing values:
+        
+      select * from actor where actor_id=1 and first_name=&quot;PENELOPE&quot;;
+      
+    
+1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+1
+Query after replacing values:
+        
+      select * from actor where actor_id=1;
+      
+    
+1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+actor_id==1
+first_name==PENELOPE
+last_name==GUINESS
+last_update==2006-02-15 04:34:33
+Query after replacing values:
+        
+      select * from actor where actor_id=1 and first_name=&quot;PENELOPE&quot;;
+      
+    
+1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+actor_id==201
+first_name==changed
+last_name==try
+last_update==2006-02-15 04:35:33
+Query after replacing values:
+        
+        UPDATE actor set first_name=&quot;changed&quot; where actor_id=201;
+        
+    
+1
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+changedyetagain
+202
+Query after replacing values:
+        
+        UPDATE actor set first_name=&quot;changedyetagain&quot; where actor_id=202;
+        
+    
+1
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+P%
+Query after replacing values:
+        
+      select * from actor where first_name like &quot;P%&quot;;
+      
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+1
+2
+Query after replacing values:
+        
+      select * from actor where actor_id=1 or actor_id=2;
+      
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+203
+Query after replacing values:
+        
+        DELETE FROM actor where actor_id=203;
+        
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+actor_id==204
+first_name==name4
+last_name==try
+last_update==2006-02-15 04:35:33
+Query after replacing values:
+        
+        DELETE FROM actor where actor_id=204 and first_name=&quot;name4&quot;;
+        
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+205
+name5
+namelast5
+Query after replacing values:
+        
+        DELETE FROM actor where actor_id=205 and first_name=&quot;name5&quot;;
+        
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+actor_id==206
+first_name==abc
+last_name==lastabc
+last_update==2006-02-15 04:34:33
+Query after replacing values:
+        
+      INSERT INTO actor values(206, &quot;abc&quot;, &quot;lastabc&quot;, &quot;2006-02-15 04:34:33&quot;);
+      
+    
+Queries are: 
+insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+selectActors1 class java.lang.String select * from actor where first_name like ${value};
+selectActors2 class [I select * from actor where actor_id=${value} or actor_id=${value};
+selectActor1 class [Ljava.lang.Object; select * from actor where actor_id=${value} and first_name=${value};
+selectActor2 class java.lang.Integer select * from actor where actor_id=${value};
+selectActor3 class org.assign1_temp.testclass2 select * from actor where actor_id=${actor_id} and first_name=${first_name};
+updateActor1 class org.assign1_temp.testclass2 UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+updateActor2 class [Ljava.lang.Object; UPDATE actor set first_name=${value} where actor_id=${value};
+deleteActor1 class java.lang.Integer DELETE FROM actor where actor_id=${value};
+deleteActor2 class org.assign1_temp.testclass2 DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+deleteActor3 class [Ljava.lang.Object; DELETE FROM actor where actor_id=${value} and first_name=${value};
+207
+hi
+areYouOkay
+2006-02-15 04:35:33
+Query after replacing values:
+        
+      INSERT INTO actor values(207, &quot;hi&quot;, &quot;areYouOkay&quot;, &quot;2006-02-15 04:35:33&quot;);
+      
+    
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at 11-Feb-2022, 9:05:12 pm</p>
+</div>
+</div>
+</body>
+</html>

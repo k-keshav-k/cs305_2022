@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<queries>
+    <sql id="insertIntoActor1" paramType="class org.assign1_temp.testclass2">
+        <![CDATA[
+      INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
+      ]]>
+    </sql>
+    <sql id="insertIntoActor2" paramType="class [Ljava.lang.Object;">
+        <![CDATA[
+      INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
+      ]]>
+    </sql>
+    <sql id="selectActors1" paramType="class java.lang.String">
+        <![CDATA[
+      select * from actor where first_name like ${value};
+      ]]>
+    </sql>
+    <sql id="selectActors2" paramType="class [I">
+        <![CDATA[
+      select * from actor where actor_id=${value} or actor_id=${value};
+      ]]>
+    </sql>
+    <sql id="selectActor1" paramType="class [Ljava.lang.Object;">
+        <![CDATA[
+      select * from actor where actor_id=${value} and first_name=${value};
+      ]]>
+    </sql>
+    <sql id="selectActor2" paramType="class java.lang.Integer">
+        <![CDATA[
+      select * from actor where actor_id=${value};
+      ]]>
+    </sql>
+    <sql id="selectActor3" paramType="class org.assign1_temp.testclass2">
+        <![CDATA[
+      select * from actor where actor_id=${actor_id} and first_name=${first_name};
+      ]]>
+    </sql>
+    <sql id="updateActor1" paramType="class org.assign1_temp.testclass2">
+        <![CDATA[
+        UPDATE actor set first_name=${first_name} where actor_id=${actor_id};
+        ]]>
+    </sql>
+    <sql id="updateActor2" paramType="class [Ljava.lang.Object;">
+        <![CDATA[
+        UPDATE actor set first_name=${value} where actor_id=${value};
+        ]]>
+    </sql>
+    <sql id="deleteActor1" paramType="class java.lang.Integer">
+        <![CDATA[
+        DELETE FROM actor where actor_id=${value};
+        ]]>
+    </sql>
+    <sql id="deleteActor2" paramType="class org.assign1_temp.testclass2">
+        <![CDATA[
+        DELETE FROM actor where actor_id=${actor_id} and first_name=${first_name};
+        ]]>
+    </sql>
+    <sql id="deleteActor3" paramType="class [Ljava.lang.Object;">
+        <![CDATA[
+        DELETE FROM actor where actor_id=${value} and first_name=${value};
+        ]]>
+    </sql>
+</queries>
