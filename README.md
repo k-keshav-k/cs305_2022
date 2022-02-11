@@ -65,7 +65,7 @@ Query after replacing values:
       select * from actor where actor_id=1 and first_name="PENELOPE";
 
 
-1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+>1 PENELOPE GUINESS 2006-02-15 04:34:33.0
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
