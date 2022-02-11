@@ -1,6 +1,6 @@
-#Keshav Krishna
-#2019CSB1224
-#CS305
+Keshav Krishna
+2019CSB1224
+CS305
 
 1. What does this program do
 In this program, a java library is developed, which executes SQL queries for create, read, update, delete operations on a database.
