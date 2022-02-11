@@ -85,7 +85,7 @@ Query after replacing values:
       select * from actor where actor_id=1;
 
 
-1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+>1 PENELOPE GUINESS 2006-02-15 04:34:33.0
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
@@ -195,7 +195,7 @@ Query after replacing values:
       select * from actor where actor_id=1 and first_name="PENELOPE";
 
 
-1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+>1 PENELOPE GUINESS 2006-02-15 04:34:33.0
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
@@ -218,7 +218,7 @@ Query after replacing values:
         UPDATE actor set first_name="changed" where actor_id=201;
 
 
-1
+>1
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
@@ -239,7 +239,7 @@ Query after replacing values:
         UPDATE actor set first_name="changedyetagain" where actor_id=202;
 
 
-1
+>1
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
@@ -259,7 +259,7 @@ Query after replacing values:
       select * from actor where first_name like "P%";
 
 
-1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+>1 PENELOPE GUINESS 2006-02-15 04:34:33.0
 46 PARKER GOLDBERG 2006-02-15 04:34:33.0
 54 PENELOPE PINKETT 2006-02-15 04:34:33.0
 104 PENELOPE CRONYN 2006-02-15 04:34:33.0
@@ -284,7 +284,7 @@ Query after replacing values:
       select * from actor where actor_id=1 or actor_id=2;
 
 
-1 PENELOPE GUINESS 2006-02-15 04:34:33.0
+>1 PENELOPE GUINESS 2006-02-15 04:34:33.0
 2 NICK WAHLBERG 2006-02-15 04:34:33.0
 Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
@@ -305,7 +305,7 @@ Query after replacing values:
         DELETE FROM actor where actor_id=203;
 
 
-Queries are:
+>Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
 selectActors1 class java.lang.String select * from actor where first_name like ${value};
@@ -327,7 +327,7 @@ Query after replacing values:
         DELETE FROM actor where actor_id=204 and first_name="name4";
 
 
-Queries are:
+>Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
 selectActors1 class java.lang.String select * from actor where first_name like ${value};
@@ -348,7 +348,7 @@ Query after replacing values:
         DELETE FROM actor where actor_id=205 and first_name="name5";
 
 
-Queries are:
+>Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
 selectActors1 class java.lang.String select * from actor where first_name like ${value};
@@ -370,7 +370,7 @@ Query after replacing values:
       INSERT INTO actor values(206, "abc", "lastabc", "2006-02-15 04:34:33");
 
 
-Queries are:
+>Queries are:
 insertIntoActor1 class org.assign1_temp.testclass2 INSERT INTO actor values(${actor_id}, ${first_name}, ${last_name}, ${last_update});
 insertIntoActor2 class [Ljava.lang.Object; INSERT INTO actor values(${value}, ${value}, ${value}, ${value});
 selectActors1 class java.lang.String select * from actor where first_name like ${value};
