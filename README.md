@@ -23,6 +23,7 @@ The fuctions first iterate through the list of queries to get the query correspo
 Then it checks if passed parameters and xml ParamType are of the same type or not. If they are not, a exception is thrown. <br />
 If the type of passed parameters and xml ParamType are same, then the function checks condition and correspondingly calls either substituteValue Array or substituteValueObject to substitute the value dynamically in the query.<br />
 Finally the query is run and the result is mapped to POJO in case of select query using a function mapRersultSetToObject, which maps the resultSet to similar named properties of the POJO, so actor_id column in resultSet is mapped to actor_id variable of the POJO and likewise.<br />
+![image](https://user-images.githubusercontent.com/80466550/153637347-9cafebdf-2a7a-48d6-b0b5-04a9b826b47c.png)
 
 ## 3. How to compile and run this program<br />
 run following mysql queries on actor table of sakila database to get rows to test on:<br />
@@ -43,6 +44,10 @@ Examples:
 Select * fromm actor where actor_id in (${value}, ${value}, ${value});
 
 #### Code coverage is 98% of all the lines, picture is attatched in design document. It can be checked in index.html file and also by executing FinalImplementation2Test with coverage and then observing the obtained coverage.
+### Index.html
+![image](https://user-images.githubusercontent.com/80466550/153637420-ef79ef9c-ea75-4d17-a4ea-6a7314889f44.png)
+### in IntelliJ
+![image](https://user-images.githubusercontent.com/80466550/153637501-6b1c6dbd-d08d-4cac-973a-7d9ae1d6ea44.png)
 
 ## 4. Provide a snapshot of a sample run:<br />
 
