@@ -17,6 +17,12 @@ Connection to database is established.<br />
 paramType and passed paramters are comparred.<br />
 All parameters in query are filled with respective values.<br />
 The query is run and the result obtained is used to populate POJOs in case of SELECT queries.<br />
+In detail, when a new object is created of finalImplementation2, the constructor is called, which parses the xml document and stores the queries and queryParam in a List. The user of the library opens a connection to a database and sets con variable of class FinalImplementation2 to the connection object.<br />
+Then the user can start running the functions: selectOne, selectMany, insert, delete and update. <br />
+The fuctions first iterate through the list of queries to get the query corresponding to the queryId passed.<br />
+Then it checks if passed parameters and xml ParamType are of the same type or not. If they are not, a exception is thrown. <br />
+If the type of passed parameters and xml ParamType are same, then the function checks condition and correspondingly calls either substituteValue Array or substituteValueObject to substitute the value dynamically in the query.<br />
+Finally the query is run and the result is mapped to POJO in case of select query using a function mapRersultSetToObject, which maps the resultSet to similar named properties of the POJO, so actor_id column in resultSet is mapped to actor_id variable of the POJO and likewise.<br />
 
 ## 3. How to compile and run this program<br />
 run following mysql queries on actor table of sakila database to get rows to test on:<br />
