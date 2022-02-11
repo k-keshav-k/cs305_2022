@@ -1,4 +1,4 @@
-# CS305 ASSIGNMENT1
+# CS305 ASSIGNMENT 1
 
 ### Keshav Krishna<br />
 ### 2019CSB1224<br />
