@@ -1,42 +1,42 @@
-Keshav Krishna
-2019CSB1224
-CS305
+Keshav Krishna<br />
+2019CSB1224<br />
+CS305<br />
 
-1. What does this program do
-In this program, a java library is developed, which executes SQL queries for create, read, update, delete operations on a database.
-The library, reads SQL queries from a xml file, by parsing the xml file.
-The parameters of the queries are populated dynamically from supplied objects.
-The resultSet from select queries are used to populate POJOs.
+1. What does this program do<br />
+In this program, a java library is developed, which executes SQL queries for create, read, update, delete operations on a database.<br />
+The library, reads SQL queries from a xml file, by parsing the xml file.<br />
+The parameters of the queries are populated dynamically from supplied objects.<br />
+The resultSet from select queries are used to populate POJOs.<br />
 
-2. A description of how this program works (i.e. its logic)
-This program's working can be roughly divided into following modules:
-The given xml file is parsed, and xml queries and paramTypes are filled in a list.
-Connection to database is established.
-paramType and passed paramters are comparred.
-All parameters in query are filled with respective values.
-The query is run and the result obtained is used to populate POJOs in case of SELECT queries.
+2. A description of how this program works (i.e. its logic)<br />
+This program's working can be roughly divided into following modules:<br />
+The given xml file is parsed, and xml queries and paramTypes are filled in a list.<br />
+Connection to database is established.<br />
+paramType and passed paramters are comparred.<br />
+All parameters in query are filled with respective values.<br />
+The query is run and the result obtained is used to populate POJOs in case of SELECT queries.<br />
 
-3. How to compile and run this program
-run following mysql queries on actor table of sakila database to get rows to test on:
-insert into actor values(201, 'name1', 'namelast1', '2006-02-15 04:35:33');
-insert into actor values(202, 'name2', 'namelast2', '2006-02-15 04:35:33');
-insert into actor values(203, 'name3', 'namelast3', '2006-02-15 04:35:33');
-insert into actor values(204, 'name4', 'namelast4', '2006-02-15 04:35:33');
-insert into actor values(205, 'name5', 'namelast5', '2006-02-15 04:35:33');
+3. How to compile and run this program<br />
+run following mysql queries on actor table of sakila database to get rows to test on:<br />
+insert into actor values(201, 'name1', 'namelast1', '2006-02-15 04:35:33');<br />
+insert into actor values(202, 'name2', 'namelast2', '2006-02-15 04:35:33');<br />
+insert into actor values(203, 'name3', 'namelast3', '2006-02-15 04:35:33');<br />
+insert into actor values(204, 'name4', 'namelast4', '2006-02-15 04:35:33');<br />
+insert into actor values(205, 'name5', 'namelast5', '2006-02-15 04:35:33');<br />
 
-Go the folder of this program and run
-gradle test
+Go the folder of this program and run<br />
+gradle test<br />
 
-Or it can also be run by opening the library in IntelliJ and then running the FinalImplementation2Test.java file.
-For primitives or array of primitives or collection of primitives:
-${value} is used to denote a single element, each ${value} can only be replaced by a single value, not an array.
-For objects of classes:
-${propx} is used to denoted obj.propx, that is, property propx of object obj.
-Here also, only one element can replace ${propx}, not an array of values.
+Or it can also be run by opening the library in IntelliJ and then running the FinalImplementation2Test.java file.<br />
+For primitives or array of primitives or collection of primitives:<br />
+${value} is used to denote a single element, each ${value} can only be replaced by a single value, not an array.<br />
+For objects of classes:<br />
+${propx} is used to denoted obj.propx, that is, property propx of object obj.<br />
+Here also, only one element can replace ${propx}, not an array of values.<br />
 
-4. Provide a snapshot of a sample run:
+4. Provide a snapshot of a sample run:<br />
 
-> Task :lib:compileJava
+> Task :lib:compileJava<br />
 Note: D:\Course_materials\CS305\Assignments\assign1_temp\lib\src\main\java\org\assign1_temp\finalimplementation2.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 > Task :lib:processResources NO-SOURCE
